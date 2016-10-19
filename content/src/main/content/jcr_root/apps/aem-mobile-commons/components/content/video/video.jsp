@@ -60,10 +60,11 @@
     <source src="<%=mp4Rendition.getPath()%>" type='video/mp4'>
 </video>
 <%
-                }
+                } else {
                 %>
 No MP4 rendtion found, please make sure you have FFMPEG installed and the cq5dam.video.iehq.mp4 profile configured <br>
                 <%
+                }
             }
         } else {
             String placeholder = "Configure the Video Component";
